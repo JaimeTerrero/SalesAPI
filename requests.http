@@ -1,0 +1,36 @@
+###
+POST http://localhost:9000/api/sales HTTP/1.1
+Content-Type: application/json
+
+{
+    "clientId": 5,
+    "productId": 3,
+    "quantity": 21,
+    "unitPrice": 120,
+    "total": 320,
+    "saleDate": "2024-02-25",
+    "paymentType": "transferencia bancara"
+}
+
+###
+GET http://localhost:9000/api/sales HTTP/1.1
+
+###
+GET http://localhost:9000/api/sales/65dfb44d89d6a9577423b197 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/sales/65dfb23881cc07367d6900dc HTTP/1.1
+Content-Type: application/json
+
+{
+    "clientId": 1,
+    "productId": 2,
+    "quantity": 25,
+    "unitPrice": 180,
+    "total": 210,
+    "saleDate": "2024-02-27",
+    "paymentType": "tarjeta de crédito"
+}
+
+###
+DELETE http://localhost:9000/api/sales/65dfa4a181cc07367d6900da HTTP/1.1
